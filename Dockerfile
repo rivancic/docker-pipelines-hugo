@@ -3,8 +3,7 @@ MAINTAINER Haiko van der Schaaf <hvdschaaf@gmail.com>
 
 # Install packages needed to build
 RUN apt-get update \
-  && apt-get install
-    ca-certificates \
+  && apt-get install -y \
     curl \
     python3 \
     wget \
