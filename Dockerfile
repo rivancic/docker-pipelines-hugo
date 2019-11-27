@@ -4,7 +4,6 @@ MAINTAINER Haiko van der Schaaf <hvdschaaf@gmail.com>
 # Install packages needed to build
 RUN apt-get update \
   && apt-get install
-    bash \
     ca-certificates \
     curl \
     python3 \
