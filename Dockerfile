@@ -22,5 +22,4 @@ RUN curl -Ls https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}
   && mv /tmp/hugo /usr/bin/hugo \
   && rm -rf /tmp/hugo* \
   
-  
 RUN hugo version
