@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM buster-slim:latest
 MAINTAINER Haiko van der Schaaf <hvdschaaf@gmail.com>
 
 # Install packages needed to build
