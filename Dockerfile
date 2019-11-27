@@ -2,7 +2,8 @@ FROM python:3.7-slim-buster
 MAINTAINER Haiko van der Schaaf <hvdschaaf@gmail.com>
 
 # Install packages needed to build
-RUN apk add --update --no-cache \
+RUN apt-get update \
+  && apt-get install
     bash \
     ca-certificates \
     curl \
