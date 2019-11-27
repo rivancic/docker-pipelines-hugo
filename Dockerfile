@@ -1,4 +1,4 @@
-FROM buster-slim:latest
+FROM python:3.7-slim-buster
 MAINTAINER Haiko van der Schaaf <hvdschaaf@gmail.com>
 
 # Install packages needed to build
