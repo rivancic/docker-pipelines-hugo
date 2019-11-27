@@ -8,8 +8,7 @@ RUN apk add --update --no-cache \
     curl \
     python3 \
     wget \
-  && pip3 install --upgrade pip \
-  && pip3 install -U awscli
+  && pip3 install --upgrade pip
 
 # Install hugo.
 ARG HUGO_VERSION=0.59.1
