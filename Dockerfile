@@ -1,5 +1,5 @@
 FROM python:3.7-slim-buster
-MAINTAINER Haiko van der Schaaf <hvdschaaf@gmail.com>
+MAINTAINER Renato Ivancic <renato@rivancic.com>
 
 # Install packages needed to build
 RUN apt-get update \
@@ -10,8 +10,8 @@ RUN apt-get update \
   && pip3 install --upgrade pip
 
 # Install hugo.
-ARG HUGO_VERSION=0.59.1
-ARG HUGO_SHA256=851b3ac01b86969196b8ca40f0c58a6639f243bcb06541fcd27eff4117f7a3f7
+ARG HUGO_VERSION=0.68.1
+ARG HUGO_SHA256=7942cfed5b22f294cc95edbe7ac2d2fdf42a1c4ec94da4666b48256a850c9caa
 
 # Rember sha256sum (and md5sum) expect 2 spaces in front of the filename on alpine...
 RUN curl -Ls https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz \
