@@ -7,7 +7,8 @@ RUN apt-get update \
     curl \
     python3 \
     wget \
-  && pip3 install --upgrade pip
+  && pip3 install --upgrade pip \
+  && pip3 install -U awscli
 
 # Install hugo.
 ARG HUGO_VERSION=0.68.1
